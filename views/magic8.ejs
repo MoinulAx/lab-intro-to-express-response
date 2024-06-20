@@ -48,17 +48,37 @@
             color: white;
             background-color: rgba(255, 255, 255, 0.2);
             padding: 10px 20px;
-            border-radius: 50%;
+            border-radius: 10px;
             z-index: 1;
             position: relative;
+        }
+        
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1;
+            position: relative;
+        }
+        
+        button:hover {
+            background-color: #555;
         }
         
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Magic 8 Ball</h1>
-        <p>Your answer is: <%= answer %></p>
-    </div>
+    <body>
+        <div class="container">
+            <h1>Magic 8 Ball</h1>
+            <p>Your answer is: <%= answer %></p>
+            <button onclick="location.reload()">Ask Again</button>
+        </div>
+    </body>
 </body>
 </html>
